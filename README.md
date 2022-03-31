@@ -1,0 +1,1 @@
+# actions-require-all-signed-commit
