@@ -1,0 +1,16 @@
+# action.yml
+name: 'all-signed'
+description: 'Check whether all commits are signed'
+inputs:
+  branch:
+    description: 'branch'
+    required: true
+    default: 'master'
+outputs:
+  is_signed:
+    description: 'chesk result'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.who-to-greet }}
